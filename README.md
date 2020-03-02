@@ -1,8 +1,8 @@
 # Cool Commands
 
-## TWO FOR ONE: These are the commands that can be used two for one:
-
 cw = delete word on cursor, switch to insert mode
+
+## ONE FOR TWO: These are the commands that can be used one for two:
 
 C = c$ = change whole line
 
