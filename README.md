@@ -2,7 +2,7 @@
 
 cw = delete word on cursor, switch to insert mode
 
-## ONE FOR TWO: These are the commands that can be used one for two:
+## TWO IN ONE: These are the commands that can be used two in one:
 
 C = c$ = change whole line
 
