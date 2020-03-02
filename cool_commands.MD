@@ -1,4 +1,6 @@
-These are the commands that can be used two for one:
+# Cool Commands
+
+## TWO FOR ONE: These are the commands that can be used two for one:
 
 cw = delete word on cursor, switch to insert mode
 
@@ -15,6 +17,8 @@ A = $a = go to end of line, insert mode append
 o = A<CR> = newline below, insert mode 
 
 O = ko = newline above, insert mode
+
+## FIND AND REPLACE:
 
 :,$s/old/new/gc -> find "old" and replace it with "new", from current line, for all matches, asking for confirmation
 
