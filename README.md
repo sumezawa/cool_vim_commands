@@ -14,7 +14,7 @@ I = ^i = go to beginning of text, insert mode
 
 A = $a = go to end of line, insert mode append
 
-o = A<CR> = newline below, insert mode 
+o = A\<CR\> = newline below, insert mode 
 
 O = ko = newline above, insert mode
 
