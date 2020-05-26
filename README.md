@@ -33,9 +33,4 @@ O = ko = newline above, insert mode
 > - remembers the non-whitespace character(s)
 > - refer to it and replace it with the new sequence
 > 
-> in this case the character replaced is '<<', and this command adds a bunch of much needed spaces in CS24 Lab Starter Codes.
->
-> really nice to replace cout<<"ugh"<<"please"<\<endl; with
-> cout << "ugh" << "please" << endl; 
-
-
+> This command adds a bunch of much-needed spaces in between the less-than sign in CS24 Starter Codes.
