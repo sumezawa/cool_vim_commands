@@ -22,6 +22,18 @@ O = ko = newline above, insert mode
 
 :% = go to matching { or }, ( or ), [ or ]	(MVP 2020)		
 
-:,$s/old/new/gc = find "old" and replace it with "new", from current line, for all matches, asking for confirmation
+:,$s/old/new/gc = find "old" and replace it with "new", from current line, for all matches, asking for confirmation (2nd Prize 2019)
 
 :%s/old/new/gc = find "old" and replace it with "new", from beginning of file, for all matches, asking for confirmation
+
+:%s/<<\\\(\\S\\\)/ << \1/gc	(2nd Prize 2020)
+
+> ## what the above command does:
+> - matches any character(s) that is not whitespace
+> - remembers the non-whitespace character(s)
+> - refer to it and replace it with the new sequence
+> 
+> really nice to replace cout<<"ugh"<<"please"<\<endl; with
+> cout << "ugh" << "please" << endl; 
+
+
