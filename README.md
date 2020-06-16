@@ -1,4 +1,6 @@
 # Cool Commands
+### MVP = Most Valuable ... Player?
+### HM = Honourable Mention
 
 cw = delete word on cursor, switch to insert mode
 
