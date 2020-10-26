@@ -1,3 +1,5 @@
+![](bruh.png)
+
 # Cool Commands
 ### MVP = Most Valuable ... Player?
 ### HM = Honourable Mention
