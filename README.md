@@ -1,6 +1,11 @@
 # Cool Commands
+### MVP = Most Valuable ... Player?
+### HM = Honourable Mention
+
 
 cw = delete word on cursor, switch to insert mode
+
+% = go to matching { or }, ( or ), [ or ]	<b>(MVP 2020)</b>
 
 ## TWO IN ONE: These are commands that can be used two in one:
 
@@ -19,8 +24,6 @@ o = A\<CR\> = newline below, insert mode
 O = ko = newline above, insert mode
 
 ## FIND AND REPLACE:
-
-:% = go to matching { or }, ( or ), [ or ]	<b>(MVP 2020)</b>
 
 :,$s/old/new/gc = find "old" and replace it with "new", from current line, for all matches, asking for confirmation <b>(HM 2019)</b>
 
