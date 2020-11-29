@@ -31,7 +31,8 @@ O = ko = newline above, insert mode
 
 :%s/old/new/gc = find "old" and replace it with "new", from beginning of file, for all matches, asking for confirmation
 
-:%s/<<\\\(\\S\\\)/ << \1/gc	<b>(HM 2020)</b>
+:s/old/new/gc = find "old" and replace it with "new", only current line, for all matches, (c = confirm)  <b>(HM 2020)</b>
+:%s/<<\\\(\\S\\\)/ << \1/gc	
 
 > ## what the above command does:
 > - matches any character(s) that is not whitespace
