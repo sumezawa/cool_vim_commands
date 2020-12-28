@@ -64,10 +64,16 @@ nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
 nnoremap <silent> <leader>p :GFiles<CR>
 " go to any file in the git repo, with any keywords
 
+" GIT FUGITIVE
+
 nnoremap <leader>gh :diffget //3<CR>
+" merge from right side
 nnoremap <leader>gu :diffget //2<CR>
+" merge from left side
 nnoremap <leader>gs :G<CR>
-" get status
+" performs git status
+
+
 
 " remapped window movement
 nnoremap <leader>v <C-W>v
