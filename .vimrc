@@ -51,6 +51,7 @@ let g:netrw_winsize=25
 let g:fzf_layout = {'window': {'width':0.8, 'height':0.8}}
 let $FZF_DEFAULT_OPTS='--reverse'
 
+" 
 nnoremap <leader>u :UndotreeToggle<CR>
 " show undo tree
 nnoremap <leader>pv <C-W>v<bar> :Ex <bar> :vertical resize 30<CR>
@@ -66,12 +67,18 @@ nnoremap <silent> <leader>p :GFiles<CR>
 
 " GIT FUGITIVE
 
-nnoremap <leader>gh :diffget //3<CR>
+" u can also tab complete these commands
+" :G for git status
+" type 's' in the status window to stage the changes, 'u' to unstage
+" :Gcommit for git commit
+" :Gpush for git push
+" Ctrl-w Ctrl-O for yeeting all the git windows (merge, commits, statuses)
+
+" merging from left and right files (since merges are binary operations
+nnoremap <leader>gj :diffget //3<CR>
 " merge from right side
-nnoremap <leader>gu :diffget //2<CR>
+nnoremap <leader>gf :diffget //2<CR>
 " merge from left side
-nnoremap <leader>gs :G<CR>
-" performs git status
 
 
 
