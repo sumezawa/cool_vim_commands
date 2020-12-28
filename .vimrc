@@ -24,6 +24,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'                              " colour / background
 Plug 'tpope/vim-fugitive'                           " git, in vim 
+Plug 'vim-airline/vim-airline'                      " show git branch
 Plug 'jremmen/vim-ripgrep'                          " rip-grep, in vim
 Plug 'vim-utils/vim-man'                            " man, in vim
 Plug 'https://github.com/ycm-core/YouCompleteMe'    " autocomplete: C++, Java
@@ -62,6 +63,11 @@ nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
 " fix it, C++, Java
 nnoremap <silent> <leader>p :GFiles<CR>
 " go to any file in the git repo, with any keywords
+
+nnoremap <leader>gh :diffget //3<CR>
+nnoremap <leader>gu :diffget //2<CR>
+nnoremap <leader>gs :G<CR>
+" get status
 
 " remapped window movement
 nnoremap <leader>v <C-W>v
