@@ -58,12 +58,13 @@ nnoremap <leader>pv <C-W>v<bar> :Ex <bar> :vertical resize 30<CR>
 " open netrw in a new, resized window
 nnoremap <leader>ps :Rg<SPACE>
 " projec search, open rip-grep
-nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
+
+" YCM 
+
+nnoremap <silent> <leader>yg :YcmCompleter GoTo<CR>
 " go to definition, and back, C++, Java
-nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
+nnoremap <silent> <leader>yf :YcmCompleter FixIt<CR>
 " fix it, C++, Java
-nnoremap <silent> <leader>p :GFiles<CR>
-" go to any file in the git repo, with any keywords
 
 " GIT FUGITIVE
 
@@ -80,6 +81,13 @@ nnoremap <leader>gj :diffget //3<CR>
 nnoremap <leader>gf :diffget //2<CR>
 " merge from left side
 
+nnoremap <silent> <leader>p :GFiles<CR>
+" go to any file in the git repo, with any keywords
+
+nnoremap <leader>gs :G<CR>
+" git status 
+nnoremap <leader>gc :Git checkout<CR>
+" git checkout
 
 
 " remapped window movement
