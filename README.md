@@ -4,6 +4,7 @@
 ### MVP = Most Valuable ... Player?
 ### HM = Honourable Mention
 
+gv = retrieve previously highlighted visual-mode selection
 
 cw = delete word on cursor, switch to insert mode
 
