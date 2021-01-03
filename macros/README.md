@@ -50,11 +50,17 @@ We stored this sequence in register 'a'.
 Macros can be nested, which means we can call this macro in 'a' in another macro (e.g. 'b'),
 which we will do to modify each pair of \<name\> and \<email\>.
 
-    <em> Start from <name></em>
+    Start from <name>
     qb@aA,<Esc>j@ajjjq
 
-- A, adds a comma after the name is re-formatted.
-- jjj goes down three lines to the next name.
+The above line does:
+- qb (begin recording sequence in register b)
+- @a (start macro in register a, for name)
+- A, (add a comma after the name is re-formatted)
+- j (go do one line)
+- @a (start macro in register a, for email)
+- jjj (go down three lines to the next name)
+- q (end recording)
 
 Finally, we can do something like:
 
@@ -62,4 +68,4 @@ Finally, we can do something like:
 
 to call the 'b' macro until the end of the file. We have now successfully converted the XML to JSON.
 
-### instructions made by sumezawa with help from the [MIT Missing Semester](https://missing.csail.mit.edu/2020/editors/#macros) page.
+### instructions made by sumezawa with help from the [MIT Missing Semester](https://missing.csail.mit.edu/2020/editors/#macros) lecture notes for Vim.
