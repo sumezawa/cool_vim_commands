@@ -51,6 +51,22 @@ let g:netrw_winsize=25
 let g:fzf_layout = {'window': {'width':0.8, 'height':0.8}}
 let $FZF_DEFAULT_OPTS='--reverse'
 
+nnoremap ,, <esc>
+" remap Esc in normal mode to ,,, since its closer
+inoremap ,, <esc>
+" remap for insert mode
+vnoremap ,, <esc>
+" remap for visual and select mode
+xnoremap ,, <esc> 
+" remap for visual mode
+snoremap ,, <esc>
+" remap for select mode
+cnoremap ,, <C-c>
+" remap for command mode
+onoremap ,, <esc>
+" remap for operator pending mode
+
+
 " 
 nnoremap <leader>u :UndotreeToggle<CR>
 " show undo tree
