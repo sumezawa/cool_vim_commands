@@ -1,2 +1,2 @@
-# Examples from Drew Neil's Practical Vim
+### annotations of example codes from Drew Neil's Practical Vim
 
