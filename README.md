@@ -4,11 +4,21 @@
 ### MVP = Most Valuable ... Player?
 ### HM = Honourable Mention
 
+
+:h(any vim command, or keyword) <b>(HM 2020)</b>
+### All hail the vim manual (and its keyword search)
+
+:sp = opens a new screen <b>(MVP 2020)</b>
+
 gv = retrieve previously highlighted visual-mode selection
+
+\<C-d\> = go down a buffer (fast j)
+
+\<C-u\> = go up a buffer (fast k)
 
 cw = delete word on cursor, switch to insert mode
 
-% = go to matching { or }, ( or ), [ or ]	<b>(MVP 2020)</b>
+% = go to matching { or }, ( or ), [ or ]	
 
 ## TWO IN ONE: These are commands that can be used two in one:
 
@@ -32,12 +42,4 @@ O = ko = newline above, insert mode
 
 :%s/old/new/gc = find "old" and replace it with "new", from beginning of file, for all matches, asking for confirmation
 
-:s/old/new/gc = find "old" and replace it with "new", only current line, for all matches, (c = confirm)  <b>(HM 2020)</b>
-:%s/<<\\\(\\S\\\)/ << \1/gc	
-
-> ## what the above command does:
-> - matches any character(s) that is not whitespace
-> - remembers the non-whitespace character(s)
-> - refer to it and replace it with the new sequence
-> 
-> This command adds a bunch of much-needed spaces in between the less-than sign in CS24 Starter Codes.
+:s/old/new/gc = find "old" and replace it with "new", only current line, for all matches, (c = confirm)
