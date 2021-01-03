@@ -121,6 +121,14 @@ nnoremap <leader>r <C-W>R
 " swap windows
 nnoremap <leader>o <C-W>O
 " close all windows, except this one
+nnoremap <leader>_ <C-W> _
+" max out height of current split
+nnoremap <leader>\| <C-W>\|
+" max out width of current split
+" type ' |' , not ' \|'
+nnoremap <leader>= <C-W>=
+" normalise split sizes
+
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
