@@ -35,8 +35,11 @@ The above line does:
 - r" (replace one character with '"', remains in normal mode)
 - f\> (find first instance of '>' in the current line)
 - s": " (delete character '>' and replace with '": "')
-- <Esc> (enter normal mode)
-- f\<
+- \<Esc\> (enter normal mode)
+- f\< (find first instance of '\<' in the current line)
+- 
+
+
 \<email\> entries can be re-formatted with identical instructions as in \<name\>.
 
 
