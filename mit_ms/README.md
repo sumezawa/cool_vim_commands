@@ -15,10 +15,11 @@ Replace \<people\> with square brackets:
     GC]<Esc>
 
 You can replace all instances of something with :%s.<br/>
-The following replaces all persons with curly braces.
+The following replaces all persons with curly braces, and a comma at the end of each entry.
+The comma for the last entry has to be removed manually.
 
     :%s/<person>/{/g
-    :%s/<\/person>/}/g
+    :%s/<\/person>/},/g
 
 You can also use macros.
 Macros record all of your inputs and commands, which is stored in a register, e.g. 'r'.
@@ -37,13 +38,28 @@ The above line does:
 - s": " (delete character '>' and replace with '": "')
 - \<Esc\> (enter normal mode)
 - f\< (find first instance of '\<' in the current line)
-- 
+- C" (delete until the end of the line after '\<' and replace with '"')
+- \<Esc\> (enter normal mode)
 
+To store this in a macro, we begin with 'q', a letter of our choice, and end recording with another q.
 
-\<email\> entries can be re-formatted with identical instructions as in \<name\>.
+    qa^r"f>s": "<Esc>f<C"<Esc>q
 
+We stored this sequence in register 'a'.
 
+Macros can be nested, which means we can call this macro in 'a' in another macro (e.g. 'b'),
+which we will do to modify each pair of \<name\> and \<email\>.
 
+    <em> Start from <name></em>
+    qb@aA,<Esc>j@ajjjq
 
-### instructions made by sumezawa with help from tips from the bottom link.
-### Example file taken from [MIT Missing Semester](https://missing.csail.mit.edu/2020/editors/#macros)
+- A, adds a comma after the name is re-formatted.
+- jjj goes down three lines to the next name.
+
+Finally, we can do something like:
+
+    1000@b
+
+to call the 'b' macro until the end of the file. We have now successfully converted the XML to JSON.
+
+### instructions made by sumezawa with help from the [MIT Missing Semester](https://missing.csail.mit.edu/2020/editors/#macros) page.
