@@ -5,6 +5,11 @@
 ### HM = Honourable Mention
 
 
+ci, di = change or delete inside either: <b>(MVP 2021)</b>
+- ci( or ci) = inside parentheses
+- di{ or di} = inside braces
+- vi[ or vi] = inside square brackets
+
 :h(any vim command, or keyword) <b>(HM 2020)</b>
 ### All hail the vim manual (and its keyword search)
 
