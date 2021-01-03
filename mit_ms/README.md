@@ -9,18 +9,24 @@ Before we begin, we first want to figure out what a JSON entry looks like:
 We also know that \<people\> will be parsed out from the XML with braces.
 
 ## Instructions:
-Replace \<people\> with square brackets;
+Replace \<people\> with square brackets:
 
-:%s/\<people\>/[/g<br/>
-:%s/\<\/people\>/]/g<br/>
+ggC[\<Esc\>
+GC]\<Esc\>
 
-Replace \<person\> with braces:
+You can replace all instances of something with :%s.<br/>
+The following replaces all persons with curly braces.
 
 :%s/\<person\>/{/g<br/>
 :%s/\<\/person\>/}/g<br/>
 
-We can keep doing these search and replace operations, but we can also use macros.
-We find an instance of \<name\> or \<email\> and and execute the commands until the end of the file.
+You can also use macros.
+Macros record all of your inputs and commands, which is stored in a register, e.g. 'r'.
+The commands stored in 'r' can be called with @r and it repeats the sequence.
+
+The progress so far is stored in 'macro0.xml'.
+The \<name\> and \<email\> entries
+
 
 
 
